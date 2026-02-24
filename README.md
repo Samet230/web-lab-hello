@@ -25,9 +25,8 @@ npm run dev
 Tarayicida http://localhost:5173 adresini ac.
 
 ## Ekran Goruntusu
-![Portfolyo Ekran Goruntusu](public/lighthouse-report.png)
+![Portfolyo Ekran Goruntusu](public/portfolio-screenshot.png)
 
 ## Lighthouse Audit
-Projenin erisilebilirlik (Accessibility) puani Lighthouse raporunda **100/100** olarak dogrulanmistir.
-
 ![Lighthouse Raporu](public/lighthouse-report.png)
+
