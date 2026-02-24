@@ -1,4 +1,4 @@
-# Web LAB -1 - Hello Projec
+# Web LAB -1 - Hello Project
 
 ## Hakkinda
  Bu proje , Web Tasarimi ve Programlama dersi LAB -1 kapsaminda
@@ -25,4 +25,4 @@ npm run dev
 Tarayicida http://localhost:5173 adresini ac.
 
 ## Ekran Goruntusu
-![alt text](image.png)
+![Portfolio Preview](public/preview.png)
