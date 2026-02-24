@@ -63,6 +63,12 @@
   outline: 2px solid #ffffff;
 }
 
+*:focus {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+
 .form-group {
   margin-bottom: 1.5rem;
   text-align: left;
