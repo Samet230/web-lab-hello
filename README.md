@@ -25,4 +25,4 @@ npm run dev
 Tarayicida http://localhost:5173 adresini ac.
 
 ## Ekran Goruntusu
-![Portfolio Preview](public/preview.png)
+![Portfolio Preview](./public/lighthouse-report.png)
