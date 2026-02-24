@@ -27,6 +27,5 @@ Tarayicida http://localhost:5173 adresini ac.
 ## Ekran Goruntusu
 ![Portfolyo Ekran Goruntusu](./public/lighthouse-report.png)
 
-## Lighthouse Audit
-![Lighthouse Raporu](./public/lighthouse-report.png)
+
 
