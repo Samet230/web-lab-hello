@@ -1,115 +1,127 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Uygulama-6: Temel CSS ile Stil Ver */
+
+/* Genel sifirlama */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  background-color: #f8fafc;
+  color: #1e293b;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
+/* Skip link: normalde gizli, Tab ile gorunur */
 .skip-link {
   position: absolute;
   top: -100px;
   left: 0;
-  background: #2563eb;
+  background: #1E3A8A;
   color: white;
   padding: 8px 16px;
   z-index: 100;
-  transition: top 0.3s;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 0 0 4px 4px;
+  transition: top 0.3s;
 }
 
 .skip-link:focus {
   top: 0;
-  outline: 2px solid #ffffff;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
+/* Focus gostergesi -- ASLA kaldirma */
+:focus {
+  outline: 2px solid #2563EB;
+  outline-offset: 2px;
+}
+
+/* Layout */
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
   text-align: left;
 }
 
-.form-group label {
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  color: #2563eb;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+section {
+  margin-bottom: 2.5rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Form stilleri */
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
   display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+input,
+textarea,
+select {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   font-family: inherit;
-  box-sizing: border-box;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: 2px solid #2563eb;
-  border-color: transparent;
+  font-size: 1rem;
 }
 
 .error-msg {
-  color: #dc2626;
-  font-size: 0.875rem;
-  margin-top: 0.25rem;
-  display: block;
-  min-height: 1.25rem;
-}
-
-fieldset {
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 1.5rem;
-}
-
-legend {
-  padding: 0 0.5rem;
-  font-weight: bold;
-  color: #2563eb;
+  color: red;
+  font-size: 0.85rem;
 }
 
 button[type="submit"] {
@@ -117,14 +129,60 @@ button[type="submit"] {
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
   width: 100%;
-  transition: background-color 0.2s;
   margin-top: 1rem;
 }
 
-button[type="submit"]:hover {
-  background-color: #1d4ed8;
+/* Proje Kartlari */
+article {
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.tech-item {
+  background: #f1f5f9;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+/* Footer & Social */
+footer {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: white;
 }
