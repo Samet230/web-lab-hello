@@ -1,14 +1,16 @@
+import './App.css';
+
 function App() {
     return (
-        <div>
+        <div className="portfolio-container">
             <a href="#main-content" className="skip-link">
                 Ana icerige atla
             </a>
 
-            <header style={{ textAlign: 'left', padding: '1rem 2rem', backgroundColor: '#fff', borderBottom: '1px solid #eee' }}>
+            <header className="main-header">
                 <h1>Samet Şahin - Portfolio</h1>
                 <nav aria-label="Ana navigasyon">
-                    <ul style={{ display: 'flex', listStyle: 'none', gap: '2rem', padding: 0 }}>
+                    <ul className="nav-list">
                         <li><a href="#hakkimda">Hakkimda</a></li>
                         <li><a href="#projeler">Projeler</a></li>
                         <li><a href="#iletisim">Iletisim</a></li>
@@ -23,11 +25,11 @@ function App() {
                         <img
                             src="/profil.jpg"
                             alt="Samet Şahin'in vesikalık fotoğrafı"
-                            style={{ width: '150px', borderRadius: '8px' }}
+                            className="profile-img"
                         />
                         <figcaption>Samet Şahin - Yazılım Mühendisi Adayı</figcaption>
                     </figure>
-                    <div style={{ textAlign: 'left', padding: '1rem 0' }}>
+                    <div className="intro-content">
                         <p><strong>Ad Soyad:</strong> Samet Şahin</p>
                         <p><strong>Öğrenci No:</strong> 230541096</p>
                         <p><strong>Bölüm:</strong> Yazılım Mühendisliği</p>
@@ -51,11 +53,7 @@ function App() {
                         <h3>Web Lab - 1</h3>
                         <p>Bu portfolyo sitesinin ilk sürümü. React ve Vite kullanılarak, erişilebilirlik (ARIA) ve SEO kurallarına uygun olarak geliştirildi.</p>
                         <p><strong>Teknolojiler:</strong> React, TypeScript, Semantic HTML</p>
-                        <img
-                            src="/project1.jpg"
-                            alt="Portfolyo sitesi projesinin ekran görüntüsü"
-                            style={{ width: '100%', borderRadius: '8px', marginTop: '1rem' }}
-                        />
+
                     </article>
 
                     <article>
@@ -127,7 +125,7 @@ function App() {
                 </section>
             </main>
 
-            <footer style={{ backgroundColor: '#1e293b', color: '#fff', padding: '2rem 1rem' }}>
+            <footer className="main-footer">
                 <p>&copy; 2025 Samet Şahin. Tüm hakları saklıdır.</p>
                 <ul className="social-links">
                     <li><a href="https://github.com/Samet230" target="_blank" rel="noopener noreferrer">GitHub</a></li>
