@@ -26,3 +26,8 @@ Tarayicida http://localhost:5173 adresini ac.
 
 ## Ekran Goruntusu
 ![alt text](image.png)
+
+## Lighthouse Audit
+Projenin erisilebilirlik (Accessibility) puani Lighthouse raporunda **100/100** olarak dogrulanmistir.
+
+![Lighthouse Raporu](public/lighthouse-report.png)
