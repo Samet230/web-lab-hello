@@ -4,74 +4,90 @@ function App() {
     return (
         <div>
             <a href="#main-content" className="skip-link">
-                Ana icerige atla
+                Ana içeriğe atla
             </a>
 
-            <header style={{ textAlign: 'left', padding: '1rem 2rem', backgroundColor: '#fff', borderBottom: '1px solid #eee' }}>
-                <h1>Samet Şahin - Portfolio</h1>
+            <header>
+                <h1 className="site-title">Samet Şahin - Portfolyo</h1>
                 <nav aria-label="Ana navigasyon">
-                    <ul style={{ display: 'flex', listStyle: 'none', gap: '2rem', padding: 0 }}>
-                        <li><a href="#hakkimda">Hakkimda</a></li>
+                    <ul>
+                        <li><a href="#hakkimda">Hakkımda</a></li>
                         <li><a href="#projeler">Projeler</a></li>
-                        <li><a href="#iletisim">Iletisim</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
                     </ul>
                 </nav>
             </header>
 
             <main id="main-content">
                 <section id="hakkimda">
-                    <h2>Hakkimda</h2>
-                    <figure>
-                        <img
-                            src="/profil.jpg"
-                            alt="Samet Şahin'in vesikalık fotoğrafı"
-                            style={{ width: '150px', borderRadius: '8px' }}
-                        />
-                        <figcaption>Samet Şahin - Yazılım Mühendisi Adayı</figcaption>
-                    </figure>
-                    <div style={{ textAlign: 'left', padding: '1rem 0' }}>
-                        <p><strong>Ad Soyad:</strong> Samet Şahin</p>
-                        <p><strong>Öğrenci No:</strong> 230541096</p>
-                        <p><strong>Bölüm:</strong> Yazılım Mühendisliği</p>
-                        <p>Merhaba! Modern web teknolojileri ile kullanıcı dostu arayüzler tasarlamayı hedefliyorum.</p>
+                    <h2>Hakkımda</h2>
+                    <div className="about-content">
+                        <figure>
+                            <img
+                                src="/profil.jpg"
+                                alt="Samet Şahin'in vesikalık fotoğrafı"
+                            />
+                            <figcaption>Samet Şahin - Yazılım Mühendisi Adayı</figcaption>
+                        </figure>
+                        <div className="bio">
+                            <p><strong>Ad Soyad:</strong> Samet Şahin</p>
+                            <p><strong>Öğrenci No:</strong> 230541096</p>
+                            <p><strong>Bölüm:</strong> Yazılım Mühendisliği</p>
+                            <p>Merhaba! Modern web teknolojileri ile kullanıcı dostu arayüzler tasarlamayı hedefliyorum.</p>
 
-                        <h3>Kullandığım Teknolojiler</h3>
-                        <ul className="tech-list">
-                            <li className="tech-item">React</li>
-                            <li className="tech-item">TypeScript</li>
-                            <li className="tech-item">Vite</li>
-                            <li className="tech-item">HTML5 & CSS3</li>
-                            <li className="tech-item">Git & GitHub</li>
-                        </ul>
+                            <h3>Kullandığım Teknolojiler</h3>
+                            <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Vite</li>
+                                <li>HTML5 & CSS3</li>
+                                <li>Git & GitHub</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
                 <section id="projeler">
                     <h2>Projelerim</h2>
+                    <div className="project-grid">
+                        <article className="project-card">
+                            <img src="/proje1.jpg" alt="E-Ticaret sitesi anasayfa ekran görüntüsü" />
+                            <h3>E-Ticaret Sitesi</h3>
+                            <p>React ve Node.js ile geliştirilmiş tam kapsamlı bir e-ticaret uygulaması.</p>
+                            <ul className="skill-tags" role="list">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </article>
 
-                    <article>
-                        <h3>Web Lab - 1</h3>
-                        <p>Bu portfolyo sitesinin ilk sürümü. React ve Vite kullanılarak, erişilebilirlik (ARIA) ve SEO kurallarına uygun olarak geliştirildi.</p>
-                        <p><strong>Teknolojiler:</strong> React, TypeScript, Semantic HTML</p>
-                        <img
-                            src="/project1.jpg"
-                            alt="Portfolyo sitesi projesinin ekran görüntüsü"
-                            style={{ width: '100%', borderRadius: '8px', marginTop: '1rem' }}
-                        />
-                    </article>
+                        <article className="project-card">
+                            <img src="/proje2.jpg" alt="Blog uygulaması yazı listesi görünümü" />
+                            <h3>Blog Uygulaması</h3>
+                            <p>Kişisel blog platformu. Markdown destekli yazı editörü.</p>
+                            <ul className="skill-tags" role="list">
+                                <li>TypeScript</li>
+                                <li>Next.js</li>
+                            </ul>
+                        </article>
 
-                    <article>
-                        <h3>Hava Durumu Uygulaması</h3>
-                        <p>OpenWeather API kullanarak anlık hava durumu verilerini çeken ve kullanıcıya dinamik bir arayüz sunan uygulama çalışması.</p>
-                        <p><strong>Teknolojiler:</strong> JavaScript, API Integration, CSS Animations</p>
-                    </article>
+                        <article className="project-card">
+                            <img src="/proje3.jpg" alt="Hava durumu uygulaması arayüzü" />
+                            <h3>Hava Durumu</h3>
+                            <p>OpenWeather API ile anlık hava durumu bilgisi.</p>
+                            <ul className="skill-tags" role="list">
+                                <li>JavaScript</li>
+                                <li>API</li>
+                            </ul>
+                        </article>
+                    </div>
                 </section>
 
                 <section id="iletisim">
-                    <h2>Iletisim</h2>
+                    <h2>İletişim</h2>
                     <form action="#" method="POST" noValidate>
                         <fieldset>
-                            <legend>Iletisim Formu</legend>
+                            <legend>İletişim Formu</legend>
 
                             <div className="form-group">
                                 <label htmlFor="name">Ad Soyad: </label>
@@ -101,16 +117,16 @@ function App() {
                             <div className="form-group">
                                 <label htmlFor="subject">Konu: </label>
                                 <select id="subject" name="subject" required aria-describedby="subject-error">
-                                    <option value="">-- Seciniz --</option>
-                                    <option value="is">Is Teklifi</option>
+                                    <option value="">-- Seçiniz --</option>
+                                    <option value="is">İş Teklifi</option>
                                     <option value="soru">Soru</option>
-                                    <option value="oneri">Oneri</option>
+                                    <option value="oneri">Öneri</option>
                                 </select>
                                 <small id="subject-error" className="error-msg" role="alert"></small>
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="message">Mesajiniz: </label>
+                                <label htmlFor="message">Mesajınız: </label>
                                 <textarea
                                     id="message"
                                     name="message"
@@ -123,13 +139,13 @@ function App() {
                                 <small id="message-error" className="error-msg" role="alert"></small>
                             </div>
 
-                            <button type="submit">Gonder</button>
+                            <button type="submit">Gönder</button>
                         </fieldset>
                     </form>
                 </section>
             </main>
 
-            <footer style={{ backgroundColor: '#1e293b', color: '#fff', padding: '2rem 1rem' }}>
+            <footer>
                 <p>&copy; 2025 Samet Şahin. Tüm hakları saklıdır.</p>
                 <ul className="social-links">
                     <li><a href="https://github.com/Samet230" target="_blank" rel="noopener noreferrer">GitHub</a></li>
