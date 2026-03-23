@@ -1,38 +1,43 @@
-# Web Lab - 3: Responsive Portfolyo Sitesi
+# Web Lab - 4: Tailwind CSS v4 & Component Architecture
 
-Bu proje, Web Lab - 3 kapsamında geliştirilen, modern CSS teknikleri (Design Tokens, Flexbox, CSS Grid) kullanılarak tam responsive (duyarlı) hale getirilmiş bir portfolyo sitesidir.
+Bu proje, Web Lab - 4 kapsamında geliştirilen; Tailwind CSS v4'ün "Utility-First" yaklaşımı, özel tema yapılandırması ve yeniden kullanılabilir bileşen mimarisi (Button, Input, Card, Alert) ile inşa edilmiş modern bir portfolyo sitesidir.
 
 ## 🚀 Proje Özellikleri
 
-- **Design System:** `tokens.css` üzerinden yönetilen merkezi tasarım değişkenleri (Renkler, Boşluklar, Tipografi).
-- **Akışkan Tasarım:** `clamp()` fonksiyonu ile ekran boyutuna göre otomatik ölçeklenen yazı boyutları (Fluid Typography).
-- **Hibrit Yerleşim:** Navigasyon için Flexbox, proje kartları için CSS Grid `auto-fit` yapısı.
-- **Erişilebilirlik:** Semantik HTML etiketleri, ARIA nitelikleri ve belirgin odaklanma (focus) göstergeleri.
-- **Dil Desteği:** Tamamen Türkçe içerik ve doğru karakter kullanımı.
+- **Tailwind CSS v4:** En güncel Tailwind sürümü ile `@theme` direktifi ve modern utility class'lar kullanılmıştır.
+- **Özel Tema (Sky Blue):** Projenin ana renk paleti modern ve ferah bir "Gök Mavisi" (`#0EA5E9`) tonuna göre özelleştirilmiştir.
+- **Bileşen Mimarisi:** 
+  - **Button:** 4 farklı renk varyantı ve 3 boyut desteği.
+  - **Input:** Hata durumu, yardım metni ve pasif mod desteği.
+  - **Card:** Elevated, Outlined ve Filled varyantları ile responsive hizalama.
+  - **Alert:** Durum bildirimleri için kapatılabilir uyarı pencereleri.
+- **Dark Mode:** `@custom-variant dark` ile tam uyumlu, göz yormayan karanlık tema desteği.
+- **UI Kit:** Tüm bileşen varyantlarının test edilebildiği kapsamlı kütüphane sayfası.
 
-## 📸 Ekran Görüntüleri (Responsive Views)
+## 📸 Ekran Görüntüleri
 
-Aşağıda projenin farklı cihazlardaki görünümü yer almaktadır:
+### ☀️ Ana Sayfa (Gündüz Modu)
+![Home Light](./screenshots/home-light.png)
 
-### 📱 Mobil Görünüm (375px)
-![Mobil Görünüm](./screenshots/screenshot-mobile.png)
+### 🌙 Ana Sayfa (Gece Modu)
+![Home Dark](./screenshots/home-dark.png)
 
-### 📑 Tablet Görünümü (768px)
-![Tablet Görünümü](./screenshots/screenshot-tablet.png)
-
-### 💻 Masaüstü Görünümü (1280px)
-![Masaüstü Görünümü](./screenshots/screenshot-desktop.png)
+### 🧪 UI Kit (Bileşen Kütüphanesi)
+![UI Kit](./screenshots/ui-kit.png)
 
 ## 📂 Dosya Yapısı
 
-- `src/styles/tokens.css`: Tasarım sistemi değişkenleri.
-- `src/App.css`: Responsive layout ve bileşen stilleri.
-- `CSS_DECISIONS.md`: Mimari kararların teknik açıklaması.
-- `screenshots/`: Responsive test çıktıları.
+- `src/components/`: Yeniden kullanılabilir atomik bileşenler.
+- `src/pages/UIKit.tsx`: Tüm bileşen varyantlarını sergileyen sayfa.
+- `src/index.css`: Tailwind v4 tema ve özel varyant tanımları.
+- `src/App.tsx`: Portfolyo bölümlerinin (About, Projects, Contact) birleştirildiği ana dosya.
 
-## 🛠️ Kurulum
+## 🛠️ Kurulum ve Çalıştırma
 
 ```bash
+# Bağımlılıkları kur
 npm install
+
+# Geliştirme sunucusunu başlat
 npm run dev
 ```
