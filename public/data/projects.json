@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "title": "E-Ticaret Platformu",
+        "description": "React ve Node.js ile geliştirilmiş, tam kapsamlı bir alışveriş deneyimi sunan web uygulaması.",
+        "tech": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Tailwind"
+        ],
+        "year": 2024,
+        "category": "fullstack",
+        "featured": true,
+        "image": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        "id": 2,
+        "title": "Kişisel Blog Portali",
+        "description": "Next.js tabanlı, SEO dostu ve dinamik içerik yönetimi sunan modern bir blog platformu.",
+        "tech": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind"
+        ],
+        "year": 2024,
+        "category": "frontend",
+        "featured": false,
+        "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        "id": 3,
+        "title": "Hava Durumu Uygulaması",
+        "description": "OpenWeather API kullanarak anlık hava verilerini görselleştiren interaktif bir harita destekli uygulama.",
+        "tech": [
+            "JavaScript",
+            "REST API",
+            "CSS"
+        ],
+        "year": 2023,
+        "category": "frontend",
+        "featured": true,
+        "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        "id": 4,
+        "title": "Görev Takip Sistemi",
+        "description": "Ekipler için sürükle-bırak (Dnd) özellikli Kanban tahtası ve performans takip modülü.",
+        "tech": [
+            "React",
+            "TypeScript",
+            "DnD Kit"
+        ],
+        "year": 2024,
+        "category": "frontend",
+        "featured": false,
+        "image": "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        "id": 5,
+        "title": "Anlık Sohbet Uygulaması",
+        "description": "WebSocket protokolü kullanılarak geliştirilmiş, gerçek zamanlı mesajlaşma sunan haberleşme aracı.",
+        "tech": [
+            "React",
+            "Socket.io",
+            "Express"
+        ],
+        "year": 2023,
+        "category": "fullstack",
+        "featured": true,
+        "image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?q=80&w=1000&auto=format&fit=crop"
+    },
+    {
+        "id": 6,
+        "title": "API Gateway Servisi",
+        "description": "Mikroservis mimarileri için yük dengeleme ve güvenlik katmanı sağlayan backend servisi.",
+        "tech": [
+            "Node.js",
+            "Redis",
+            "Docker"
+        ],
+        "year": 2022,
+        "category": "backend",
+        "featured": false,
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=1000&auto=format&fit=crop"
+    }
+]
