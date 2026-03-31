@@ -9,7 +9,10 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 // Sections
 import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Skills from './components/sections/Skills';
 import ProjectList from './components/sections/ProjectList';
+import ContactSection from './components/sections/ContactSection';
 // Forms
 import ContactForm from './components/forms/ContactForm';
 import ProjectFilter from './components/forms/ProjectFilter';
@@ -93,34 +96,15 @@ function App() {
                 {/* Uygulama-4: Hero */}
                 <Hero />
 
-                {/* Hakkımda (Not modularized yet as per PDF, but clean) */}
-                <section id="hakkimda" className="py-24 px-6">
-                    <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-16">
-                        <div className="shrink-0 relative group">
-                            <div className="absolute -inset-2 bg-gradient-to-tr from-sky-600 to-indigo-600 rounded-full blur-lg opacity-20 group-hover:opacity-40 transition-opacity"></div>
-                            <img
-                                src="/profil.jpg"
-                                alt="Samet Şahin"
-                                className="relative w-56 h-56 rounded-full object-cover shadow-2xl border-8 border-white dark:border-gray-800 transform transition-transform group-hover:scale-[1.02]"
-                            />
-                        </div>
-                        <div className="flex-1 text-center md:text-left">
-                            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">Hakkımda</h2>
-                            <p className="text-xl text-gray-600 dark:text-gray-400 mb-10 leading-relaxed font-light">
-                                Merhaba! Ben Samet. Teknolojinin görsel dünyasını seviyorum.
-                                React ve TypeScript kullanarak sürdürülebilir, ölçeklenebilir ve en önemlisi
-                                kullanıcı odaklı dijital ürünler inşa ediyorum.
-                            </p>
-                            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                                {["React", "TypeScript", "Tailwind CSS", "Node.js", "Framer Motion"].map(skill => (
-                                    <span key={skill} className="px-5 py-2 rounded-xl text-sm font-bold bg-sky-50 text-sky-700 dark:bg-sky-900/20 dark:text-sky-300 border border-sky-100 dark:border-sky-800 shadow-sm">
-                                        {skill}
-                                    </span>
-                                ))}
-                            </div>
+                {/* Hakkımda & Yetenekler (Modularised) */}
+                <div className="relative">
+                    <About />
+                    <div className="max-w-4xl mx-auto px-6 pb-24 md:-mt-16">
+                        <div className="md:ml-[288px]">
+                            <Skills />
                         </div>
                     </div>
-                </section>
+                </div>
 
                 {/* Projeler Bölümü */}
                 <section id="projeler" className="py-24 px-6 bg-slate-50/50 dark:bg-slate-900/20">
@@ -155,22 +139,8 @@ function App() {
                     </div>
                 </section>
 
-                {/* İletişim Bölümü */}
-                <section id="iletisim" className="py-24 px-6">
-                    <div className="max-w-xl mx-auto">
-                        <div className="text-center mb-12">
-                            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">İletişime Geç</h2>
-                            <p className="text-gray-500 dark:text-gray-400 font-medium">
-                                Bir projeniz mi var? Veya sadece merhaba demek mi istiyorsunuz?
-                            </p>
-                        </div>
-
-                        <div className="bg-white dark:bg-gray-900 p-8 md:p-10 rounded-3xl shadow-2xl shadow-sky-500/5 border border-gray-100 dark:border-gray-800/10">
-                            {/* Uygulama-1: ContactForm */}
-                            <ContactForm />
-                        </div>
-                    </div>
-                </section>
+                {/* İletişim Bölümü (Modularised) */}
+                <ContactSection />
             </main>
 
             {/* Uygulama-7 Ek: Footer */}
