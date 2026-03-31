@@ -1,17 +1,18 @@
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary' | 'secondary' | 'danger' | 'ghost';
-    size?: 'sm' | 'md' | 'lg';
+    variant?: "primary" | "secondary" | "danger" | "ghost";
+    size?: "sm" | "md" | "lg";
     children: React.ReactNode;
 }
 
 export default function Button({
     children,
-    variant = 'primary',
-    size = 'md',
-    className = '',
+    variant = "primary",
+    size = "md",
+    className = "",
     ...props
 }: ButtonProps) {
-    const base = "inline-flex items-center justify-center font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2";
+    const base =
+        "inline-flex items-center justify-center font-medium rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-offset-2";
 
     const variants = {
         primary: "bg-primary text-white hover:bg-primary/90 shadow-sm transition-all active:scale-95",
