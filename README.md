@@ -1,41 +1,52 @@
-# Web Lab - 5: JavaScript/TypeScript & State Management
+# Profesyonel Web Portfolyosu 🚀 (Lab 6 - Checkpoint #1)
 
-Bu proje, Web Lab - 5 kapsamında geliştirilen; TypeScript'in tip güvenliği, React'in dinamik state (durum) yönetimi ve asenkron veri çekme (Fetch API) mimarisiyle güçlendirilmiş bir portfolyo uygulamasıdır.
+Bu proje, modern web teknolojileri (React 19, TypeScript, Tailwind CSS v4) kullanılarak geliştirilmiş, tamamen modüler bir yapıya sahip profesyonel bir portfolyo uygulamasıdır. 
 
-## 🚀 Lab 5 Yenilikleri
+## 🏁 Ara Checkpoint #1 Özeti
 
-- **Dinamik Veri Yönetimi:** Projeler `projects.json` dosyasından asenkron olarak çekilmektedir.
-- **TypeScript Model:** Tüm veri akışı `Project`, `Category` ve `FilterState` arayüzleriyle (Interface) kontrol altına alınmıştır.
-- **Akıllı Filtreleme ve Arama:** 
-  - Başlık, açıklama ve teknolojilere göre anlık metin araması.
-  - Kategori bazlı (Frontend, Backend, Fullstack) filtreleme.
-  - Yıl ve Başlık bazlı, Türkçe karakter duyarlı sıralama.
-- **Gelişmiş Durum Yönetimi (UX):** 
-  - Veri yüklenirken animasyonlu spinner gösterimi.
-  - Hatalı veri durumunda kullanıcıyı bilgilendiren Alert sistemi.
-  - Boş arama sonuçları için özel "Filtreleri Temizle" ekranı.
+Lab 6 kapsamında uygulama, PDF Sayfa 22 standartlarına göre tamamen refactor edilmiş ve atomik bileşen mimarisine geçilmiştir.
 
-## 📸 Lab 5 Ekran Görüntüleri
+### ✨ Öne Çıkan Özellikler
 
-### 📦 Dinamik Proje Listesi (Tümü)
-![All Projects](./screenshots/lab5/all-projects.png)
+- **📦 Komple Modüler Mimari:**
+  - `ui/`: Atomik bileşenler (Button, Card, Input, Alert).
+  - `layout/`: İskelet bileşenler (Header, Footer).
+  - `sections/`: Sayfa bölümleri (Hero, About, Skills, ProjectList, ContactSection).
+  - `forms/`: Karmaşık form mantığı (ContactForm, ProjectFilter).
+- **🎨 Modern Arayüz:**
+  - `Header`: Mobil uyumlu hamburger menü, sticky effect ve backdrop-blur.
+  - `Hero`: Dinamik giriş alanı ve Call to Action (CTA) butonları.
+  - `Footer`: Sosyal medya linkleri ve UI Kit erişimi.
+- **🔍 Dinamik Filtreleme & Sıralama:**
+  - Başlık ve teknolojiye göre anlık arama.
+  - Kategori bazlı filtreleme ve çoklu sıralama seçenekleri.
+- **📝 Gelişmiş Form Yönetimi:**
+  - Real-time validation (doğrulama) ve dinamik hata mesajları.
+  - Yükleme ve başarı durumları.
 
-### 🔍 Canlı Arama ve Filtreleme (React araması)
-![Filtered Projects](./screenshots/lab5/filtered.png)
+### 📸 Ekran Görüntüleri
 
-### 🌑 Boş Sonuç Durumu (Hatalı arama)
-![No Results](./screenshots/lab5/no-results.png)
+#### 1. Masaüstü Karanlık Mod (Hero & Hero)
+![Masaüstü Görünümü](file:///C:/Users/smt1s/.gemini/antigravity/brain/ce879f06-0f8e-460f-a5b9-3b7cb491b187/top_fold_dark_v2_1774991683862.png)
 
-## 📂 Dosya Yapısı (Lab 5 Odaklı)
+#### 2. Projeler ve Gelişmiş Filtreleme
+![Filtreleme Sistemi](file:///C:/Users/smt1s/.gemini/antigravity/brain/ce879f06-0f8e-460f-a5b9-3b7cb491b187/projects_filters_dark_1774991702843.png)
 
-- `src/types/project.ts`: Veri ve filtre modellerinin tanımları.
-- `src/services/projectService.ts`: Fetch API ile veri çekme işlemleri.
-- `src/utils/projectHelpers.ts`: Filtreleme ve sıralama algoritmaları.
-- `public/data/projects.json`: Dinamik proje verileri.
+#### 3. Mobil Menü Görünümü (375px)
+![Mobil Menü](file:///C:/Users/smt1s/.gemini/antigravity/brain/ce879f06-0f8e-460f-a5b9-3b7cb491b187/mobile_menu_dark_1774991716115.png)
 
-## 🛠️ Kurulum ve Çalıştırma
+## 🏗️ Mimari Yapı
 
-```bash
-npm install
-npm run dev
-```
+- **Dil:** TypeScript (Sıkı tip kontrolü, Sıfır `any`).
+- **State Yönetimi:** `useState`, `useMemo` (Performans optimizasyonu).
+- **Veri:** Asenkron JSON fetch ve Error/Loading state yönetimi.
+- **Git:** `feature/checkpoint-1` branch yönetimi.
+
+## 🚀 Hızlı Başlangıç
+
+1. `npm install`
+2. `npm run dev`
+3. Tarayıcıda aç: `http://localhost:5173`
+
+---
+&copy; 2025 Samet Şahin - WEB-LAB Deneyleri
