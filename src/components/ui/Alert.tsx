@@ -4,6 +4,7 @@ interface AlertProps {
     title?: string;
     dismissible?: boolean;
     onDismiss?: () => void;
+    className?: string;
 }
 
 export default function Alert({
@@ -12,6 +13,7 @@ export default function Alert({
     title,
     dismissible = false,
     onDismiss,
+    className = "",
 }: AlertProps) {
     const variants = {
         info: "bg-blue-50 border-blue-500 text-blue-800 dark:bg-blue-950 dark:text-blue-200",
@@ -23,7 +25,7 @@ export default function Alert({
     return (
         <div
             role="alert"
-            className={`border-l-4 rounded-r-lg p-4 ${variants[variant]}`}
+            className={`border-l-4 rounded-r-lg p-4 ${variants[variant]} ${className}`}
         >
             <div className="flex justify-between items-start">
                 <div className="flex-1">
