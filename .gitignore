@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Lab PDF files
+*.pdf
+# Gemini & Brain artifacts
+brain/
+.gemini/
+

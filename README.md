@@ -26,14 +26,14 @@ Lab 6 kapsamında uygulama, PDF Sayfa 22 standartlarına göre tamamen refactor 
 
 ### 📸 Ekran Görüntüleri
 
-#### 1. Masaüstü Karanlık Mod (Hero & Hero)
-![Masaüstü Görünümü](file:///C:/Users/smt1s/.gemini/antigravity/brain/ce879f06-0f8e-460f-a5b9-3b7cb491b187/top_fold_dark_v2_1774991683862.png)
+#### 1. Masaüstü Karanlık Mod (Hero & Header)
+![Masaüstü Görünümü](./screenshots/lab6/top_fold_dark.png)
 
 #### 2. Projeler ve Gelişmiş Filtreleme
-![Filtreleme Sistemi](file:///C:/Users/smt1s/.gemini/antigravity/brain/ce879f06-0f8e-460f-a5b9-3b7cb491b187/projects_filters_dark_1774991702843.png)
+![Filtreleme Sistemi](./screenshots/lab6/projects_filters.png)
 
 #### 3. Mobil Menü Görünümü (375px)
-![Mobil Menü](file:///C:/Users/smt1s/.gemini/antigravity/brain/ce879f06-0f8e-460f-a5b9-3b7cb491b187/mobile_menu_dark_1774991716115.png)
+![Mobil Menü](./screenshots/lab6/mobile_menu.png)
 
 ## 🏗️ Mimari Yapı
 
